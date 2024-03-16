@@ -33,6 +33,7 @@ with tab1:
         # Extract dataframes.
         for k, v in symbol_dict.items():
             st.text(v)
+
             st.dataframe(dfs_cln[k])#, width=700, height=250)
 
 #with tab2:
