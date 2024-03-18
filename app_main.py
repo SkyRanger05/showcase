@@ -2,7 +2,7 @@
 
 # Import dependencies.
 import sys
-from app_tools import cln
+from app_tools import cln, viz
 from frontend import st, csv_ex
 #from frontend import csv_example as csv
 
@@ -52,7 +52,7 @@ with tab1:
 #    st.dataframe(width=700, height=250)
 #    #df_pctChange, 
 #
-#with tab3:
+with tab3:
 #    chart_picks = st.selectbox("Choose the chart to view the trading: open, high, low, close", (
 #        "candle",
 #        "line open",
@@ -78,6 +78,8 @@ with tab1:
 #    #        c = chart_dict[chart_picks]
 #    #        #st.write(c)
 #    #        st.altair_chart(c, use_container_width=True)
+
+    st.write("Hello")
 #with tab4:
 #    tech_analysis = st.selectbox("Choose the TA to view.", ("Sharpe Ratio", "Price-to-Earnings Ratio"))
 #
@@ -87,44 +89,45 @@ with tab1:
 #            wip = ta[i]
 #            st.write(wip)
 #
-#with tab5:
-#    st.write("Time Series: under construction...stay tuned!")
-#
-#with tab6:
-#    st.write("Machine Learning: under construction...stay tuned!")
-#
-#with tab7:
-#    st.write("Deep Learning: under construction...stay tuned!")
-#
-#with tab8:
-#    st.write("Algorithmic Trading: under construction...stay tuned!")
-#
-#with tab9:
-#    st.write("Robo Advisor: under construction...stay tuned!")
-#
-#with tab10:
-#    st.write("Cypto Currency: under construction...stay tuned!")
-#
-#with tab11:
-#    st.write("dApps: under construction...stay tuned!")
-#
-#
-##container = st.container(border=True)
-##container.write("This is inside the container")
-##st.write("This is outside")
-##container.write("This is inside too")
-#
-#st.write("Howdeee...almost there!")
+with tab5:
+    st.write("Time Series: under construction...stay tuned!")
+    st.write("What's up nurse")
 
-#with tab1:
-#    st.write("Wa na labaw")
-#option = st.sidebar.selectbox("Select data collection.", ("Pre-collected data in csv format", "Make an API request for data"))
-#
-#if option == "Pre-collected data in csv format":
-#    st.sidebar.write("My man.")
-#
-#else:
-#    st.sidebar.write("Dude.")
+with tab6:
+    st.write("Machine Learning: under construction...stay tuned!")
+
+with tab7:
+    st.write("Deep Learning: under construction...stay tuned!")
+
+with tab8:
+    st.write("Algorithmic Trading: under construction...stay tuned!")
+
+with tab9:
+    st.write("Robo Advisor: under construction...stay tuned!")
+
+with tab10:
+    st.write("Cypto Currency: under construction...stay tuned!")
+
+with tab11:
+    st.write("dApps: under construction...stay tuned!")
+
+
+#container = st.container(border=True)
+#container.write("This is inside the container")
+#st.write("This is outside")
+#container.write("This is inside too")
+
+st.write("Howdeee...almost there!")
+
+with tab1:
+    st.write("Wa na labaw")
+option = st.sidebar.selectbox("Select data collection.", ("Pre-collected data in csv format", "Make an API request for data"))
+
+if option == "Pre-collected data in csv format":
+    st.sidebar.write("My man.")
+
+else:
+    st.sidebar.write("Dude.")
 
 
 
