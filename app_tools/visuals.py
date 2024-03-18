@@ -21,3 +21,5 @@ class Viz:
         dataframe1.plot(kind=chart, legend=True, figsize=(15, 10), title=title, rot=35, label=label1)
         dataframe2.plot(kind=chart, legend=True, figsize=(15, 10), rot=35, label=label2)
                 
+    def plt():
+        pass
