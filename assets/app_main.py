@@ -2,9 +2,16 @@
 
 # Import dependencies.
 import sys
-from app_tools import cln, viz# --> when setup neurals: no module named frontend, commented out but may affect when streamlit run, resulting in circular.
-from frontend import st, csv_ex
-#from frontend import csv_example as csv
+
+#from app_tools import cln, viz# --> when setup neurals: no module named frontend, commented out but may affect when streamlit run, resulting in circular.
+from app_tools import data_sanitizer as cln
+from assets.app_tools import visuals as viz
+
+
+#from frontend import st, csv_ex
+from assets.app_tools import csv_example as csv_ex
+
+import streamlit as st
 
 # Title.
 st.title(':blue[Hellooo...Universe!!!] :sunglasses:')

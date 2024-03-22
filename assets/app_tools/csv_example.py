@@ -1,11 +1,13 @@
 # -*- coding: "utf-8" -*-
 
 # Import libraries.
-from frontend import st, Path, pct
+#from frontend import st, Path, pct
+from pathlib import Path
+from app_tools.pct_change import read_csv
 
 # Define the paths to the csv files.
-amzn_csv = Path(r"resources/amazon.csv")
-sox_csv = Path(r"resources/SOX_2015_2020.csv")
+amzn_csv = Path(r"resources/csv/amazon.csv")
+sox_csv = Path(r"resources/csv/SOX_2015_2020.csv")
 
 # Create dictionary for paths.
 csv_dict = {
@@ -37,7 +39,7 @@ def data():
    
 
         # Pandas dataframe.
-        csv_df = pct.read_csv(csv_dict[k])
+        csv_df = read_csv(csv_dict[k])
 
         # Updates df dict.
         df[k] = csv_df

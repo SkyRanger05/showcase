@@ -1,6 +1,7 @@
 # -*- coding: "utf-8" -*-
-import frontend 
-#from app_tools.app
+#import frontend 
+from app_tools.csv_example import data
+from assets.app_main import st
 
 dust_list = []
 dust = (dust_list)
@@ -54,9 +55,9 @@ def janitor(stock_data):
         #df_info = stock_df.info()
 
 # Initialize.
-st = frontend.st
-csv_ex = frontend.csv_ex
-data = csv_ex.data()
+#st = frontend.st
+#csv_ex = frontend.csv_ex
+data = data()
 
 ohlc = ["date", "open", "high", "low", "close"]
 

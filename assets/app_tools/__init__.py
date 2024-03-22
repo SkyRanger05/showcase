@@ -1,5 +1,5 @@
 # -*- coding: "utf-8" -*-
-from assets.app_tools import data_sanitizer
+from app_tools import data_sanitizer
 from assets.app_tools import pct_change
 from assets.app_tools import visuals
 from assets.app_tools import ml_unsupervise
