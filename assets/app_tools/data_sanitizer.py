@@ -1,7 +1,11 @@
 # -*- coding: "utf-8" -*-
 #import frontend 
-from app_tools.csv_example import data
-from assets.app_main import st
+from assets.app_tools.csv_example import data
+import streamlit as st
+
+
+# Initialize import.
+#st = app_main.st
 
 dust_list = []
 dust = (dust_list)

@@ -1,5 +1,5 @@
 # -*- coding: "utf-8" -*-
-from frontend import pd
+import pandas as pd
 
 class Viz:
 
